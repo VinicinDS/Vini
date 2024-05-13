@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(0deg, #fff, #000);
+
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: linear-gradient(0deg, #fff, #000);
+}
+
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #666;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery-item {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.gallery-item img {
+  transition: .3s;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gallery-item img:hover {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+        /* Estilos para o botão "Voltar" */
+        .back-button {
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        
+        .back-button:hover {
+          background: linear-gradient(0deg, #fff, #000);
+        }
+        
+/* Alinhamento do botão "Voltar" à esquerda */
+.left-align {
+  text-align: left;
+}
+
+/* Estilos para o texto "Descubra mais" e o parágrafo abaixo */
+h1, p.text-white {
+  color: white;
+}
+
+/* Efeito de mostrar a legenda ao passar o mouse sobre a imagem */
+.gallery-item {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-item:hover .caption {
+  visibility: visible;
+}
+
+.caption {
+  visibility: hidden;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Deixar o site responsivo */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 10px;
+  }
+  
+  .faq-list {
+    font-size: 18px;
+  }
+  
+  .faq-question {
+    padding: 15px;
+  }
+  
+  .faq-answer>div {
+    padding: 20px;
+  }
+  
+  .footer {
+    padding: 2rem 0;
+  }
+}
+
